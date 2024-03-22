@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.add-exam-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    
+}
+.exam-form{
+    width: 50%;
+    box-shadow: 0px 0px 5px grey;
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items:center;
+    /* min-height: 50%; */
+    flex-direction: column;
+    border-radius: 10px;
+}
+.exam-form button{
+    width: 30%;
+    margin-top: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.exam-form button:hover{
+    animation: bgchange 0.5s 1 ease-in;
+    background-color: rebeccapurple;
+    color: white;
+}
+@keyframes bgchange {
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: rebeccapurple;
+        color: white;
+    }
+}
+.exam-form .heading{
+    margin-top: 10px;
+}
+.exam-form input{
+    padding: 10px;
+    width: 50%;
+    border: none;
+    margin-top: 10px;
+    border-bottom: 2px solid grey;
+}
+.exam-form input:focus{
+    outline: none;
+}
+@media screen and (max-width:820px) {
+    .exam-form{
+        width: 80%;
+    }
+    .exam-form input{
+        width: 70%;
+    }
+}

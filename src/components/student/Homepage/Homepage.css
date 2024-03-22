@@ -1,0 +1,32 @@
+.chatbox-icon{
+    position: fixed;
+    right: 0;
+    margin-right: 20px;
+    bottom: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    filter: drop-shadow(0px 0px 4px gray);
+    border-radius: 50%;
+}
+.chatbox-icon:hover{
+    filter: drop-shadow(0px 0px 10px gray);
+    cursor: pointer;
+}
+.main-chatbox{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width:880px) {
+    .main-chatbox{
+        position: absolute;
+        right: 0;
+        bottom: 30px;
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.exam-navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rebeccapurple;
+    box-shadow: 0px 0px 7px grey;
+    padding: 15px;
+}
+.exam-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* min-height: 50vh; */
+}
+.notice-msg{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-width: 50%;
+    margin-top: 20px;
+    box-shadow: 0px 1px 10px rebeccapurple;
+    border-radius: 10px;
+}
+.notice-msg ul{
+    list-style: square;
+    line-height: 40px;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.btn button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    cursor: pointer;
+}
+.btn button:hover{
+    color: white;
+    animation: hovereffect 0.3s 1 ease-in;
+    background-color: rebeccapurple;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 60vh;
+    box-shadow: 0px 1px 5px rebeccapurple;
+    margin-top: 20px;
+    border-radius: 10px;
+    /* padding: 10px; */
+    line-height: 20px;
+    text-transform: capitalize;
+}
+.questions button{
+    width: 50%;
+}
+.question-heading{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    /* background-color:rgb(197, 154, 239); */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    min-height: 20%;
+    justify-content: space-between;
+}
+.que{
+    margin-top: 10px;
+    padding: 20px;
+    line-height: 30px;
+}
+.que ul{
+    list-style: none;
+}
+.que ul li{
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.que ul li:hover{
+    box-shadow: 0px 0px 6px grey;
+}
+.que-btns{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.que button{
+    width: 20%;
+    /* background-color: rebeccapurple; */
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;   
+    border-radius: 10px;
+}
+.que .check{
+    background-color: rgb(155, 73, 238);
+    color: white;
+}
+.que button:hover{
+    color: white;
+    box-shadow: 1px 5px 5px grey;
+    background-color: rebeccapurple;
+    animation: hovereffect 0.5s 1 ease-in;
+}
+
+@keyframes hovereffect {
+    0%{
+        background-color: white;
+        color: black;
+    }
+    100%{
+        background-color: rebeccapurple;
+        color: white;
+    }
+}
+@media screen  and (max-width:880px){
+    .questions{
+        width: 90%;
+    }
+}
+@media screen and(max-width:640px) {
+    .que button{
+        width: 70%;
+    }
+}

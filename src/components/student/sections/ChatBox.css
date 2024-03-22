@@ -1,0 +1,68 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatbox{
+    width: 400px;
+    height: auto;
+    max-height: 400px;
+    overflow: scroll;
+    box-shadow: 0px 0px 5px gray;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.chatbox::-webkit-scrollbar{
+    display: none;
+}
+.queries{
+    margin: 10px;
+}
+.queries ul{
+    list-style: none;
+}
+.queries ul li{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.queries ul li:hover{
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+}
+.close-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+.close-icon p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 0px 2px gray;
+    border-radius: 50%;
+}
+.close-icon p:hover{
+    box-shadow: 0px 0px 10px grey;
+    cursor: pointer;
+}
+.solution{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 10px rebeccapurple;
+}
+@media screen and (max-width:880px) {
+    .chatbox{
+        width:300px;
+        height: 300px;
+        margin: 10px;
+        padding: 10px;
+
+    };
+}

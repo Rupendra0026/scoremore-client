@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rebeccapurple;
+    box-shadow: 0px 0px 7px grey;
+    padding: 15px;
+}
+
+.title {
+    font-size: large;
+    color: white;
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.actions a {
+    font-size: x-large;
+    text-decoration: none;
+    color: rebeccapurple;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.actions a:hover {
+    box-shadow: 0px 0px 6px white;
+    /* animation: check ease-in 0.6s 1; */
+}
+
+/* @keyframes check {
+    0%{
+        transform: rotate(0deg);
+    }   
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+.actions button {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+
+.actions button:hover {
+    /* transform: skewX(-5deg); */
+    box-shadow: 0px 0px 6px white;
+}
+
+.side-main-nav {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.sidenav {
+    min-width: 15%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    min-width: 85%;
+}
+
+.sideToggle {
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:1280px) {
+    .sidenav {
+        min-width: 25%;
+    }
+
+    .main-content {
+        min-width: 75%
+    }
+}
+
+@media screen and (max-width:780px) {
+    .sideToggle {
+        display: block;
+    }
+
+    .side-main-nav {
+        position: relative;
+    }
+
+    .sidenav {
+        position: absolute;
+        /* height: 100vh; */
+        /* min-width: 0; */
+    }
+
+    .main-content {
+        min-width: 100%;
+    }
+
+    /* .sidenav{
+        display: none;
+    } */
+
+}

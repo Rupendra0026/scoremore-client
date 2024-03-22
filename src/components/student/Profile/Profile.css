@@ -1,0 +1,42 @@
+.profile-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.student-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+
+}
+.Admin-card , .student-card{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 4px rebeccapurple;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.key{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.intro-head{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: start;
+    flex-direction: column;
+}
